@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonthakon's CV/Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#projects">Projects</a>
+        <a href="#activities">Activities</a>
+        <a href="#certificates">Certificates</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <img src="cvpdf/profile1.jpg" alt="Nonthakon Profile" class="profile-pic">
+        <h1>นนทกร [นามสกุล]</h1>
+        <p>Aspiring Full-Stack Developer | Creative & Passionate</p>
+    </section>
+
+    <section id="profile">
+        <h2>About Me</h2>
+        <p>นำเนื้อหาจากหน้า Profile เดิมมาใส่ที่นี่...</p>
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python</li>
+            </ul>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="card-container">
+            <div class="card" onclick="openModal('prompt-go-modal')">
+                <img src="cvpdf/PsruPhoto.jpg" alt="Project 1 Preview">
+                <h3>Prompt GO</h3>
+                <p>Prompt GO เป็นแอปสำหรับเรียกรถไฟฟ้าภายในมหาวิทยาลัย ออกแบบมาเพื่อเพิ่มความสะดวกในการเดินทางของนักศึกษาและบุคลากร </p>
+            </div>
+            <div class="card" onclick="openModal('project2-modal')">
+                <img src="path/to/project2-preview.jpg" alt="Project 2 Preview">
+                <h3>ชื่อโปรเจคที่ 2</h3>
+                <p>คำอธิบายสั้นๆ เกี่ยวกับโปรเจคนี้...</p>
+            </div>
+            </div>
+    </section>
+
+    <section id="activities">
+        <h2>Activities</h2>
+        <div class="gallery-container">
+            <img src="path/to/activity-photo1.jpg" alt="Activity 1" onclick="openImageModal(this.src)">
+            <img src="path/to/activity-photo2.jpg" alt="Activity 2" onclick="openImageModal(this.src)">
+            <img src="path/to/activity-photo3.jpg" alt="Activity 3" onclick="openImageModal(this.src)">
+            </div>
+    </section>
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="card-container">
+            <div class="card" onclick="openModal('cert1-modal')">
+                <img src="path/to/certificate1-preview.jpg" alt="Certificate 1">
+                <h3>ชื่อเกียรติบัตร 1</h3>
+                <p>ได้รับจาก... เมื่อวันที่...</p>
+            </div>
+             </div>
+    </section>
+
+    <div id="prompt-go-modal" class="modal">
+        <div class="modal-content modal-content-large">
+            <span class="close" onclick="closeModal('prompt-go-modal')">&times;</span>
+    
+            <div class="carousel">
+                <button class="carousel-button carousel-button--left">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='15 18 9 12 15 6'%3E%3C/polyline%3E%3C/svg%3E" alt="Previous">
+                </button>
+
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide">
+                            <img class="carousel-image" src="Cv/cvpdf/PsruPhoto.jpg" alt="Design System">
+                        </li>
+                        <li class="carousel-slide">
+                            <img class="carousel-image" src="cvpdf/PsruPhoto.jpg" alt="Swagger API">
+                        </li>
+                        <li class="carousel-slide">
+                            <img class="carousel-image" src="path/to/prompt-go-image3.jpg" alt="App Screenshot">
+                        </li>
+                    </ul>
+                </div>
+    
+                <button class="carousel-button carousel-button--right">
+                     <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 18 15 12 9 6'%3E%3C/polyline%3E%3C/svg%3E" alt="Next">
+                </button>
+
+                <div class="carousel-nav">
+                    <button class="carousel-indicator current-slide"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
+                </div>
+            </div>
+    
+            <div class="project-details">
+                <h2>Prompt GO</h2>
+                <h3>คำอธิบาย</h3>
+                <p>
+                    Prompt GO เป็นแอปสำหรับเรียกรถไฟฟ้าภายในมหาวิทยาลัย ออกแบบมาเพื่อเพิ่มความสะดวกในการเดินทางของนักศึกษาและบุคลากร ผู้ใช้งานสามารถดูตำแหน่งรถและสถานีได้แบบเรียลไทม์ เลือกจุดขึ้นและลงเพื่อประเมินเวลาและระยะทางโดยประมาณ พร้อมทั้งกดเรียกรถและติดตามสถานะการเดินทางได้ทันที ระบบยังส่งการแจ้งเตือนเมื่อรถใกล้ถึงสถานีที่กำหนด ช่วยลดเวลารอและทำให้การเดินทางภายในมหาวิทยาลัยมีประสิทธิภาพมากขึ้น
+                </p>
+    
+                <h3>หน้าที่ที่รับผิดชอบ (Tester)</h3>
+                <p>
+                    ดำเนินการ Manual Testing: ออกแบบ Test Case, ทดสอบการทำงานของแอป และบันทึกผลลง Google Sheet พร้อมสร้างตารางสรุปผลการทดสอบเพื่อใช้ติดตามปัญหา
+                    พัฒนาและรัน Automated Test ด้วย Robot Framework
+                        ใช้ Appium Library เชื่อมกับ Android Studio Emulator เพื่อทดสอบฟังก์ชันซ้ำ ๆ ในแอปพลิเคชันมือถือ
+                        ใช้ Selenium Library สำหรับทดสอบฟังก์ชันของฝั่ง Web Application
+                    ทำ Security Testing (Pentest เบื้องต้น) ตรวจสอบช่องโหว่ Cross-Site Scripting (XSS) Stored และจัดทำรายงานผลการทดสอบส่งให้ทีมพัฒนา (Development Team)
+                </p>
+    
+                <h3>เทคโนโลยีที่ใช้</h3>
+                <div class="tech-stack">
+                    <img src="path/to/express-icon.png" alt="Express.js" title="Express.js">
+                    <img src="path/to/js-icon.png" alt="JavaScript" title="JavaScript">
+                    <img src="path/to/nodejs-icon.png" alt="Node.js" title="Node.js">
+                    <img src="path/to/react-icon.png" alt="React Native" title="React Native">
+                    <img src="path/to/mongodb-icon.png" alt="MongoDB" title="MongoDB">
+                    <img src="path/to/vite-icon.png" alt="Vite" title="Vite">
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div id="cert1-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('cert1-modal')">&times;</span>
+            <h2>ชื่อเกียรติบัตรที่ 1</h2>
+            <img src="path/to/certificate1-preview.jpg" alt="Certificate 1" style="width:100%;">
+            <a href="path/to/your-certificate1.pdf" class="button" download>Download PDF</a>
+        </div>
+    </div>
+
+    <div id="image-modal" class="modal">
+        <span class="close" onclick="closeImageModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
